@@ -1,0 +1,36 @@
+.container {
+    width: 500px;
+    margin: 20px;
+}
+
+.controls {
+    margin-top: 10px;
+}
+
+.controls label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 200px;
+    padding: 3px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+#square {
+    width: 100px;
+    height: 100px;
+    background-color: #b7c9d3;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
