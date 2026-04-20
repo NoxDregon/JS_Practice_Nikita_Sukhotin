@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f3f3f3;
+}
+
+.filters {
+    margin: 10px 0;
+}
+
+input {
+    width: 80px;
+    padding: 3px;
+}
+
+button {
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 10px;
+    width: 500px;
+    background: #fff;
+}
+
+th, td {
+    border: 1px solid #999;
+    padding: 6px;
+    text-align: center;
+}
+
+th {
+    background: #ddd;
+}
+
+#message {
+    margin-top: 10px;
+    color: red;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5 JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="table-with-right-buttons">
+            <div class="table-wrapper">
+                <table id="spreadsheet">
+                    <tbody id="table-body">
+                        <tr id="row-0">
+                            <td contenteditable="false"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="right-buttons">
+                <button id="add-col-btn" class="btn" title="Добавить столбец">+</button>
+                <button id="remove-col-btn" class="btn" title="Удалить столбец">-</button>
+            </div>
+        </div>
+        
+        <div class="bottom-buttons">
+            <button id="add-row-btn" class="btn" title="Добавить строку">+</button>
+            <button id="remove-row-btn" class="btn" title="Удалить строку">-</button>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <p id="modal-message">Вы уверены?</p>
+            <div class="modal-buttons">
+                <button id="modal-confirm" class="modal-btn modal-yes">Да</button>
+                <button id="modal-cancel" class="modal-btn modal-no">Нет</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

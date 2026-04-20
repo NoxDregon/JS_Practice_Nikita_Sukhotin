@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    background: transparent;
+    position: relative;
+}
+
+.table-with-right-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.table-wrapper {
+    display: inline-block;
+}
+
+table {
+    border-collapse: collapse;
+    background: transparent;
+}
+
+td {
+    border: 1px solid #999;
+    padding: 8px 12px;
+    text-align: center;
+    min-width: 80px;
+    height: 36px;
+    cursor: pointer;
+    background: white;
+}
+
+td:hover {
+    background: #f9f9f9;
+}
+
+td.editing {
+    padding: 0;
+}
+
+td.editing input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 14px;
+    padding: 8px 12px;
+    margin: 0;
+    background: white;
+}
+
+.right-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.bottom-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+    padding-right: 46px;
+}
+
+.btn {
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid #888;
+    background: #e0e0e0;
+    color: #555;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background: #d0d0d0;
+}
+
+.btn:active {
+    background: #c0c0c0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 25px;
+    border-radius: 6px;
+    text-align: center;
+    min-width: 280px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.modal-content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.modal-btn {
+    padding: 8px 24px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.modal-yes {
+    background: #4CAF50;
+    color: white;
+}
+
+.modal-yes:hover {
+    background: #45a049;
+}
+
+.modal-no {
+    background: #f44336;
+    color: white;
+}
+
+.modal-no:hover {
+    background: #da190b;
+}
+
+@media (max-width: 768px) {
+    td {
+        padding: 6px 8px;
+        min-width: 60px;
+        font-size: 12px;
+    }
+    
+    .btn {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+    }
+    
+    .bottom-buttons {
+        padding-right: 40px;
+    }
+}
